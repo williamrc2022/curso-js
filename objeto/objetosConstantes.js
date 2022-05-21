@@ -12,5 +12,9 @@ pessoa.nome = 'Maria'
 pessoa.end = 'Raua ABC'
 
 console.log(pessoa.nome)
-console.log(pessoa)
+console.log(pessoa) 
+
+const pessoaConstante = Object.freeze({nome: 'Rafael'})
+pessoaConstante.nome = 'William'
+console.log(pessoaConstante)
 
