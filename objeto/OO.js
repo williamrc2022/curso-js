@@ -19,4 +19,7 @@ objeto.processamento() // Foco passou a ser o objeto
 
 //Principios importantes:
 
-//Abstração
+// 1 Abstração
+// 2 Encapsulamento
+// 3 Herança (prototype)
+// 4 Polimorfismo
