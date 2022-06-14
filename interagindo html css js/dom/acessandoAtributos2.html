@@ -19,14 +19,14 @@
     <script>
         const lista = document.querySelector('div ul[destino= "escritorio"]')
         console.log('Elemento "ul" .................')
-        console.log('childNodes', lista.childNodes)
-        console.log('destino', lista.destino)
-        console.log('getAttribute', lista.getAttribute('destino'))
-        console.log('hasAttribute', lista.hasAttribute('destino'))
+        console.log('childNodes', lista.childNodes) //puxa todos atributos filhos
+        console.log('destino', lista.destino)       // retorna um valor undefined
+        console.log('getAttribute', lista.getAttribute('destino')) // retorna o valor de destino 
+        console.log('hasAttribute', lista.hasAttribute('destino')) //retorna valor boleano
         lista.setAttribute('destino', 'empresa') //Muda atributo
         lista.setAttribute('status', 'aberto')   //Adiciona Atributo
-        lista.removeAttribute('destino')
-        console.log(lista.dataset.urgencia)
+        lista.removeAttribute('destino') // remove o atributo
+        console.log(lista.dataset.urgencia) 
         lista.dataset.urgencia = 4
         console.log(lista.getAttribute('data-urgencia'))
 
@@ -36,7 +36,7 @@
         console.log(label.for) // Retorna undefined
         console.log(label.htmlFor)
         console.log(label.getAttribute('for'))
-        
+
 
         
     </script>
