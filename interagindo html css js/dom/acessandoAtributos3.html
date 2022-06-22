@@ -16,7 +16,19 @@
         </ul>
     </div>
     <script>
-        // ...
+        const list = document.querySelector('#compras')
+
+        // somente leitura
+        console.log(list.attributes)
+        console.log(list.attributes[0])
+        console.log(list.attributes.destino)
+        //console.log(list.attributes.data-urgencia)   Errado
+        console.log(list.attributes[2])
+        console.log(list.attributes['data-urgencia'])
+        //list.attributes.destino = 'casa'  Não é possivél alterar
+        console.log(list.attributes.destino)
+        
+    
     </script>
 </body>
 
